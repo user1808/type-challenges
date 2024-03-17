@@ -1,5 +1,7 @@
 import type { Equal, Expect } from '@type-challenges/utils'
 
+type AAA = IsFixedStringLiteralType<`${number}DEF`>;
+
 type testcase =
   | Expect<Equal<IsFixedStringLiteralType<'ABC'>, true>>
   | Expect<Equal<IsFixedStringLiteralType<string>, false>>
