@@ -1,1 +1,1 @@
-type IsAny<T> = any
+type IsAny<T> = Equal<T, any>;
