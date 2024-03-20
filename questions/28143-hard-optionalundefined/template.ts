@@ -1,5 +1,3 @@
-type Test = OptionalUndefined<{ value: string | undefined, desc: string }, 'value'>;
-
 type OptionalUndefinedMerge<
   Original extends object, 
   WithOptional extends object, 
