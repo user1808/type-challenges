@@ -1,5 +1,7 @@
 import type { Equal, Expect } from '@type-challenges/utils'
 
+type AAA = DistributeUnions<'b' | { type: 'a' } | [1]>;
+
 type cases = [
   // Already distributed unions should stay the same:
   Expect<Equal<DistributeUnions<1>, 1>>,
